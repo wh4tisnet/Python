@@ -1,6 +1,4 @@
-print("==========================")
-print("***    CALCULADORA     ***")
-print("==========================")
+print("CALCULADORA")
 x = int(input("Primer numero: "))
 s = input("Operacion: ")
 y = int(input("Segundo numero: "))
