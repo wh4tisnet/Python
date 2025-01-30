@@ -1,10 +1,16 @@
 print("Introduce tu contraseña")
-contra=input("")
-conta=0
-while contra!="pino":
+contra = input("")
+conta = 0
+max_intentos = 3
+
+while contra != "pino" and conta < max_intentos:
     print("Contraseña incorrecta")
-    contra=input("Contraseña: ")
-    conta=conta+1
-    if conta<=3:
-         print("Limite de intentos superados")
-print("Contraseña correcta")
+    conta += 1
+    if conta < max_intentos:
+        contra = input("Contraseña: ")
+    else:
+        print("Límite de intentos superados")
+        break
+
+if contra == "pino":
+    print("Contraseña correcta")
