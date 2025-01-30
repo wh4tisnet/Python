@@ -1,19 +1,20 @@
 intentos = 0
-while True:
-    print('¿Quién eres?')
-    nombre = input()
+max_intentos = 3
+
+while intentos < max_intentos:
+    nombre = input('¿Quién eres? ')
     intentos += 1
     if nombre != 'Abel':
-        print('Intento {intentos}. Usuario incorrecto. Intenta de nuevo.')
+        print(f'Intento {intentos}. Usuario incorrecto. Intenta de nuevo.')
         continue
-    print('Hola, Abel, ¿cuál es tu contraseña?')
-    contraseña = input()
+
+    contraseña = input('Hola, Abel, ¿cuál es tu contraseña? ')
     intentos += 1
     if contraseña != 'lol1234':
-        print('Intento {intentos}. Contraseña incorrecta. Intenta de nuevo.')
+        print(f'Intento {intentos}. Contraseña incorrecta. Intenta de nuevo.')
         continue
-    break
-if intentos > 3:
-    print('Acceso denegado. Demasiados intentos fallidos.')
-else:
+
     print('Bienvenido, Abel!')
+    break
+else:
+    print('Acceso denegado. Demasiados intentos fallidos.')
