@@ -1,13 +1,13 @@
-print("--------------------")
-print("*** Calificador ****")
-print("--------------------")
-cual=input("Quieres calificar alumnos? s para si o n para no \n")
-while cual=="s":
-    nota=int(input("Nota del alumno: "))
-    if nota>4:
-        print("El alumnos esta aprobado")
+print("Calificador")
+cual = input("¿Quieres calificar alumnos? (s para sí o n para no) \n")
+
+while cual.lower() == "s":
+    nota = int(input("Nota del alumno: "))
+    if nota >= 5:
+        print("El alumno está aprobado")
     else:
-        print("El alumnos no esta aprobado")
-    cual=input("Quiere continuar? ")
-    if cual=="n":
-        print("")
+        print("El alumno no está aprobado")
+    
+    cual = input("¿Quieres continuar? (s para sí o n para no) \n")
+
+print("Programa terminado.")
