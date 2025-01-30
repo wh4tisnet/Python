@@ -1,4 +1,3 @@
-print("TIENDA HUMILDE")
 cantidad_pan = int(input("¿Cuántas unidades de pan quieres?: "))
 precio_pan = 1.00
 if cantidad_pan < 0:
