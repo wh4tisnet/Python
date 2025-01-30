@@ -4,14 +4,12 @@ print("Déjame presentarme, yo soy Mat y soy un mini programa informático que t
 
 tareas = []
 
-# Solicitar las primeras 6 tareas
 for i in range(1, 7):
     tarea = input(f"Por favor dime la tarea {i}: ")
     tareas.append(tarea)
 
 print("Entendido señor, sus tareas son:", ", ".join(tareas))
 
-# Solicitar más tareas si es necesario
 while True:
     continuar = input("¿Quiere añadir más tareas? (s para sí, n para no): ").lower()
     if continuar == 'n':
